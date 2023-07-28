@@ -9,6 +9,8 @@ export const metadata = {
 
 const montserrat = Montserrat({
   subsets: ['latin'],
+  weight: ['400','700'],
+  variable: '--font-monserrat'
 });
 
 export default function RootLayout({ children }) {
