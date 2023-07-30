@@ -25,7 +25,7 @@ export default async function MovieDetails({ params }) {
                 <h2 className="text-lg">{data.release_date}</h2>
                 <h2>Runtime: {data.runtime} minutes</h2>
                 <h2 className="bg-green-600 inline-block my-2 py-2 px-2 text-white rounded-md text-sm">{data.status}</h2>
-                <Image width={1000} height={1000} className="my-12 w-full" src={imagePath + data.backdrop_path} priority />
+                <Image width={1000} height={1000} className="my-12 w-full" alt={data.title} src={imagePath + data.backdrop_path} priority />
                 <p>{data.overview}</p>
             </div>
         </div>
